@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
+<plist version="1.0">
+    <dict>
+        <key>AuthorizationURL</key>
+        <string>your authorization url</string>
+        <key>TokenURL</key>
+        <string>your token url</string>
+        <key>UserInfoURL</key>
+        <string>your user info url</string>
+        <key>LogoutURL</key>
+        <string>your logout url</string>
+        <key>ClientID</key>
+        <string>your client id</string>
+        <key>ClientSecret</key>
+        <string>your client secret</string>
+        <key>RedirectURI</key>
+        <string>your redirect uri</string>
+        <key>ViewType</key>
+        <string>your view type</string>
+        <key>SocialUrl</key>
+        <string>your social url</string>
+    </dict>
+</plist>>
+</plist>
