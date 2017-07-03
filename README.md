@@ -75,20 +75,65 @@ The followig steps are to be followed to use this CidaasGoogle
     return CidaasGoogle.handle(app, open: url, options: options)
 ```
 
-8. In your project's `ViewController.swift` file, create an instance for `CidaasGoogle`
+8. Create a plist file and fill all the inputs in key value pair. The inputs are below mentioned.
+
+The plist file should become like this :
+
+```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
+    <plist version="1.0">
+        <dict>
+            <key>  AuthorizationURL  </key>
+            <string>  Your authorization url  </string>
+            
+            <key>  TokenURL  </key>
+            <string>  Your token url  </string>
+        
+            <key>  UserInfoURL  </key>
+            <string>  Your user info url  </string>
+    
+            <key>  LogoutURL  </key>
+            <string>  Your logout url  </string>
+
+            <key>  ClientID  </key>
+            <string>  Your client id  </string>
+
+            <key>  ClientSecret  </key>
+            <string>  Your client secret  </string>
+
+            <key>  RedirectURI  </key>
+            <string>  Your redirect uri  </string>
+
+            <key>  ViewType  </key>
+            <string>  Your view type  </string>
+            
+            <key>SocialUrl</key>
+            <string>your social url</string>
+        </dict>
+    </plist>
+```
+9. Mention the file name in AppDelegate.swift
+
+```swift
+    CidaasSDK.plistFilename = "Your file name"
+```
+
+10. In your project's `ViewController.swift` file, create an instance for `CidaasGoogle`
 
 ```swift
     var cidaas: CidaasGoogle!
 ```
 
-9. Inside the ViewController's `viewDidLoad()` method, initialise the instance and assign the delegate of `CidaasGoogle` by setting the current ViewController
+11. Inside the ViewController's `viewDidLoad()` method, initialise the instance and assign the delegate of `CidaasGoogle` by setting the current ViewController
 
 ```swift
     cidaas = CidaasGoogle()
     cidaas.delegate = self
 ```
 
-10. Call the `cidaasGoogleLogin()` method and receive the access token as callback
+12. Call the `cidaasGoogleLogin()` method and receive the access token as callback
 
 ```swift
     cidaas.cidaasGoogleLogin { response in
