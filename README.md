@@ -204,12 +204,12 @@ ViewController.swift
 
     class ViewController: UIViewController {
     
-        var cidaas: CidaasGoogle!
+        var cidaas_google: CidaasGoogle!
     
         override func viewDidLoad() {
             super.viewDidLoad()
-            cidaas = CidaasGoogle()
-            cidaas.delegate = self
+            cidaas_google = CidaasGoogle()
+            cidaas_google.delegate = self
         }
 
         @IBAction func btn_google(_ sender: Any) {
