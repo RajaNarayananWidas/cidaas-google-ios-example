@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import CidaasSDK
+import Cidaas_SDK
 import Google
 import GoogleSignIn
 

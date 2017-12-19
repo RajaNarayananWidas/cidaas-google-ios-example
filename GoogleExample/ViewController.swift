@@ -7,9 +7,9 @@
 //
 
 import UIKit
-import CidaasSDK
+import Cidaas_SDK
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, LoaderDelegate {
 
     var cidaas_google : CidaasGoogle!
     
@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         cidaas_google = CidaasGoogle()
         cidaas_google.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
+        CidaasSDK.loaderDelegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,8 +28,8 @@ class ViewController: UIViewController {
 
     @IBAction func btn_cidaas_google_login(_ sender: Any) {
         cidaas_google.cidaasGoogleLogin { cidaas_token_response in
-            if cidaas_token_response.success == true {
-                CidaasSDK.getUserInfo(accessToken: cidaas_token_response.accessToken!) { cidaas_user_info_response in
+            if cidaas_token_response.issuccess == true {
+                CidaasSDK.getUserInfo(accessToken: (cidaas_token_response.accessTokenEntity?.accessToken)!) { cidaas_user_info_response in
                     let alert = UIAlertController(title: "Display Name", message: cidaas_user_info_response.displayName, preferredStyle: UIAlertControllerStyle.alert)
                     alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default))
                     self.present(alert, animated: true, completion: nil)
@@ -42,5 +43,14 @@ class ViewController: UIViewController {
         }
     }
 
+    func showLoader() {
+        CustomLoader.sharedCustomLoaderInstance.showLoader(self.view, using: nil) { (hud) in
+            
+        }
+    }
+    
+    func hideLoader() {
+        CustomLoader.sharedCustomLoaderInstance.hideLoader(self.view)
+    }
 }
 

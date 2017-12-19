@@ -4,23 +4,20 @@
 <plist version="1.0">
     <dict>
         <key>AuthorizationURL</key>
-        <string>your authorization url</string>
+        <string>https://apis-cidaas.test.carbookplus.com/oauth2-login/oauth2/authz</string>
         <key>TokenURL</key>
-        <string>your token url</string>
+        <string>https://apis-cidaas.test.carbookplus.com/oauth2-login/oauth2/token</string>
         <key>UserInfoURL</key>
-        <string>your user info url</string>
+        <string>https://apis-cidaas.test.carbookplus.com/oauth2-usermanagement/oauth2/userinfo</string>
         <key>LogoutURL</key>
-        <string>your logout url</string>
+        <string>https://apis-cidaas.test.carbookplus.com/oauth2-usermanagement/oauth2/logoutuser</string>
         <key>ClientID</key>
-        <string>your client id</string>
-        <key>ClientSecret</key>
-        <string>your client secret</string>
+        <string>d15eaf25d4e54195951b21365f47206d</string>
         <key>RedirectURI</key>
-        <string>your redirect uri</string>
+        <string>https://apis-cidaas.test.carbookplus.com/user-ui/html/calback.html</string>
+        <key>SocialURL</key>
+        <string>https://apis-cidaas.test.carbookplus.com/oauth2-social-service/token</string>
         <key>ViewType</key>
-        <string>your view type</string>
-        <key>SocialUrl</key>
-        <string>your social url</string>
+        <string>login</string>
     </dict>
-</plist>>
 </plist>

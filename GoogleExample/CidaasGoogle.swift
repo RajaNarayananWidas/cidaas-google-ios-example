@@ -9,11 +9,9 @@
 import Foundation
 import Google
 import GoogleSignIn
-import CidaasSDK
+import Cidaas_SDK
 
 public class CidaasGoogle : UIViewController, GIDSignInUIDelegate, CidaasGoogleDelegate {
-    
-    
     
     var cal : CallbackEntity = CallbackEntity()
     static var callback: ((CallbackEntity)->())?
@@ -34,33 +32,33 @@ public class CidaasGoogle : UIViewController, GIDSignInUIDelegate, CidaasGoogleD
     
     public func didSignIn(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if user != nil {
-            cal.accessToken = user.authentication.accessToken
-            cal.success = true
-            cal.errorMessage = ""
+            cal.accessTokenEntity = AccessTokenEntity()
+            cal.accessTokenEntity?.accessToken = user.authentication.accessToken
+            cal.issuccess = true
+            cal.errorMessage = nil
         }
         else {
-            cal.accessToken = ""
-            cal.success = false
-            cal.errorMessage = "No user"
+            cal.accessTokenEntity = nil
+            cal.issuccess = false
+            cal.errorMessage = "Response is failure"
         }
         CidaasGoogle.callback!(cal)
     }
     
     public func cidaasGoogleLogin(callback: @escaping (CallbackEntity) -> ()) {
         login { loginResponse in
-            if loginResponse.success == true {
-                print ("Access Token : \(loginResponse.accessToken ?? "NIL")")
-                CidaasSDK.callback = callback
+            if loginResponse.issuccess == true {
+                print ("Access Token : \(loginResponse.accessTokenEntity?.accessToken ?? "NIL")")
+                CidaasSDK.CALLBACK = callback
                 let cidaas_sdk = CidaasSDK()
-                cidaas_sdk.getAccessTokenBySocial(tokenOrCode: loginResponse.accessToken!, provider: Provider.google.rawValue, givenType: GivenType.token.rawValue)
+                cidaas_sdk.getAccessTokenBySocial(tokenOrCode: (loginResponse.accessTokenEntity?.accessToken)!, provider: Provider.google.rawValue, givenType: GivenType.token.rawValue)
             }
             else {
                 print ("Error Message : \(loginResponse.errorMessage ?? "NIL")")
-                let cal = CallbackEntity()
-                cal.accessToken = nil
-                cal.success = false
-                cal.errorMessage = CidaasTextHelper().txt_failure_response
-                callback(cal)
+                self.cal.accessTokenEntity = nil
+                self.cal.issuccess = loginResponse.issuccess
+                self.cal.errorMessage = loginResponse.errorMessage
+                callback(self.cal)
                 
             }
         }
@@ -69,19 +67,20 @@ public class CidaasGoogle : UIViewController, GIDSignInUIDelegate, CidaasGoogleD
     
     public func googleLogin(callback: @escaping (CallbackEntity) -> ()) {
         login { loginResponse in
-            if loginResponse.success == true {
-                print ("Access Token : \(loginResponse.accessToken ?? "NIL")")
-                self.cal.accessToken = loginResponse.accessToken
-                self.cal.success = true
-                self.cal.errorMessage = nil
+            if loginResponse.issuccess == true {
+                print ("Access Token : \(loginResponse.accessTokenEntity?.accessToken ?? "NIL")")
+                self.cal.accessTokenEntity = loginResponse.accessTokenEntity
+                self.cal.issuccess = loginResponse.issuccess
+                self.cal.errorMessage = loginResponse.errorMessage
                 callback(self.cal)
             }
             else {
                 print ("Error Message : \(loginResponse.errorMessage ?? "NIL")")
-                self.cal.accessToken = nil
-                self.cal.success = false
-                self.cal.errorMessage = CidaasTextHelper().txt_failure_response
+                self.cal.accessTokenEntity = nil
+                self.cal.issuccess = loginResponse.issuccess
+                self.cal.errorMessage = loginResponse.errorMessage
                 callback(self.cal)
+
                 
             }
         }

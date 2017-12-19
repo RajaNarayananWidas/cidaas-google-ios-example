@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A25C2E35520919D27C9F86A /* Pods_GoogleExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 339F6EBB2F8371160EFF3467 /* Pods_GoogleExample.framework */; };
+		1F3740F41FE8FA99006954A8 /* CidaasGoogle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3740F31FE8FA99006954A8 /* CidaasGoogle.swift */; };
 		1F70CBE11F04DA4F00622D5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70CBE01F04DA4F00622D5E /* AppDelegate.swift */; };
 		1F70CBE31F04DA4F00622D5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70CBE21F04DA4F00622D5E /* ViewController.swift */; };
 		1F70CBE61F04DA4F00622D5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F70CBE41F04DA4F00622D5E /* Main.storyboard */; };
@@ -15,11 +16,13 @@
 		1F70CBEB1F04DA4F00622D5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F70CBE91F04DA4F00622D5E /* LaunchScreen.storyboard */; };
 		1F70CBF31F04DAC100622D5E /* Cidaas.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F70CBF21F04DAC100622D5E /* Cidaas.plist */; };
 		1F70CBF51F04DAD800622D5E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F70CBF41F04DAD800622D5E /* GoogleService-Info.plist */; };
-		1F70CBF71F04DBCD00622D5E /* CidaasGoogle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70CBF61F04DBCD00622D5E /* CidaasGoogle.swift */; };
+		1FB8FE381FE8FCB800AB9D86 /* CustomLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8FE351FE8FCB800AB9D86 /* CustomLoader.swift */; };
+		1FB8FE391FE8FCB800AB9D86 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8FE371FE8FCB800AB9D86 /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		07269335F2A35626FC622ABF /* Pods-GoogleExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleExample/Pods-GoogleExample.debug.xcconfig"; sourceTree = "<group>"; };
+		1F3740F31FE8FA99006954A8 /* CidaasGoogle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CidaasGoogle.swift; sourceTree = "<group>"; };
 		1F70CBDD1F04DA4F00622D5E /* GoogleExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F70CBE01F04DA4F00622D5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F70CBE21F04DA4F00622D5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,7 +32,10 @@
 		1F70CBEC1F04DA4F00622D5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F70CBF21F04DAC100622D5E /* Cidaas.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Cidaas.plist; sourceTree = "<group>"; };
 		1F70CBF41F04DAD800622D5E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		1F70CBF61F04DBCD00622D5E /* CidaasGoogle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CidaasGoogle.swift; sourceTree = "<group>"; };
+		1FB8FE341FE8FCB700AB9D86 /* GoogleExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoogleExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		1FB8FE351FE8FCB800AB9D86 /* CustomLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLoader.swift; sourceTree = "<group>"; };
+		1FB8FE361FE8FCB800AB9D86 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		1FB8FE371FE8FCB800AB9D86 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		339F6EBB2F8371160EFF3467 /* Pods_GoogleExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1814B098B0F08318EE7E61B /* Pods-GoogleExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleExample/Pods-GoogleExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,15 +73,19 @@
 		1F70CBDF1F04DA4F00622D5E /* GoogleExample */ = {
 			isa = PBXGroup;
 			children = (
-				1F70CBF61F04DBCD00622D5E /* CidaasGoogle.swift */,
 				1F70CBF41F04DAD800622D5E /* GoogleService-Info.plist */,
+				1F3740F31FE8FA99006954A8 /* CidaasGoogle.swift */,
 				1F70CBF21F04DAC100622D5E /* Cidaas.plist */,
 				1F70CBE01F04DA4F00622D5E /* AppDelegate.swift */,
+				1FB8FE351FE8FCB800AB9D86 /* CustomLoader.swift */,
+				1FB8FE361FE8FCB800AB9D86 /* MBProgressHUD.h */,
+				1FB8FE371FE8FCB800AB9D86 /* MBProgressHUD.m */,
 				1F70CBE21F04DA4F00622D5E /* ViewController.swift */,
 				1F70CBE41F04DA4F00622D5E /* Main.storyboard */,
 				1F70CBE71F04DA4F00622D5E /* Assets.xcassets */,
 				1F70CBE91F04DA4F00622D5E /* LaunchScreen.storyboard */,
 				1F70CBEC1F04DA4F00622D5E /* Info.plist */,
+				1FB8FE341FE8FCB700AB9D86 /* GoogleExample-Bridging-Header.h */,
 			);
 			path = GoogleExample;
 			sourceTree = "<group>";
@@ -127,12 +137,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = Widas;
 				TargetAttributes = {
 					1F70CBDC1F04DA4F00622D5E = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = N7VFD4HU4U;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -177,9 +188,26 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GoogleExample/Pods-GoogleExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Cidaas-SDK/Cidaas_SDK.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/ReachabilitySwift.framework",
+				"${BUILT_PRODUCTS_DIR}/libCommonCrypto/CommonCrypto.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cidaas_SDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReachabilitySwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CommonCrypto.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -192,9 +220,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GoogleExample/Pods-GoogleExample-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -207,13 +238,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoogleExample-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -223,9 +257,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F70CBF71F04DBCD00622D5E /* CidaasGoogle.swift in Sources */,
+				1F3740F41FE8FA99006954A8 /* CidaasGoogle.swift in Sources */,
 				1F70CBE31F04DA4F00622D5E /* ViewController.swift in Sources */,
+				1FB8FE391FE8FCB800AB9D86 /* MBProgressHUD.m in Sources */,
 				1F70CBE11F04DA4F00622D5E /* AppDelegate.swift in Sources */,
+				1FB8FE381FE8FCB800AB9D86 /* CustomLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +297,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -269,7 +307,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -311,7 +353,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -319,7 +363,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -349,13 +397,17 @@
 			baseConfigurationReference = 07269335F2A35626FC622ABF /* Pods-GoogleExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = N7VFD4HU4U;
 				INFOPLIST_FILE = GoogleExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.widas.facebooksdk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "GoogleExample/GoogleExample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -364,13 +416,16 @@
 			baseConfigurationReference = C1814B098B0F08318EE7E61B /* Pods-GoogleExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = N7VFD4HU4U;
 				INFOPLIST_FILE = GoogleExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.widas.facebooksdk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "GoogleExample/GoogleExample-Bridging-Header.h";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
